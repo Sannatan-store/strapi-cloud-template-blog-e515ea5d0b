@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sales",
+  "info": {
+    "singularName": "sale",
+    "pluralName": "sales",
+    "displayName": "Sale",
+    "description": "Sales transactions"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "sales"
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "saleDate": {
+      "type": "datetime"
+    }
+  }
+}

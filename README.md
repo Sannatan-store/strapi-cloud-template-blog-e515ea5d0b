@@ -59,3 +59,12 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 ---
 
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+
+## 🛒 POS system
+
+This project now includes a basic point of sale (POS) setup to manage clothing store inventory and sales. It exposes `Product` and `Sale` content types:
+
+- **Product**: stores item name, price, and stock count.
+- **Sale**: records product sales, updates stock, and calculates totals.
+
+Run the Strapi server and use the API or admin panel to create products and record sales.
